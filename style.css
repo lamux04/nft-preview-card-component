@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  background-color: var(--dark-blue-main);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.card {
+  --altura: 800px;
+  --anchura: 430px;
+  border-radius: 1rem;
+  width: var(--anchura);
+  height: var(--altura);
+  margin: calc((100vh - var(--altura)) / 2) auto;
+  background-color: var(--dark-blue-card);
+  padding: 24px;
+}
+
+.imagen img {
+  border-radius: 0.5rem;
+  width: calc(var(--anchura) - 48px);
+}
+
+.titulo {
+  color: var(--white);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.numero::before {
+  content: "#";
+}
+
+.texto {
+  font-family: "Outfit", sans-serif;
+  color: var(--soft-blue);
+}
+
+.criptomonedas::before {
+  content: "";
+}
